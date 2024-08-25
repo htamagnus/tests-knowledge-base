@@ -61,14 +61,6 @@
 - **Definição**: Verificar se determinadas propriedades são sempre mantidas em diversas entradas.
 - **Ferramenta**: fast-check.
 
-### 13. Testes com Docker e Ambientes Contêinerizados 🐳
-- **Vantagens**: Isolar ambientes e simular microserviços de produção.
-- **Consistência de resultados**: Garantir que diferenças de ambiente não afetem os testes.
-
-### 14. Testes de Acessibilidade ♿
-- **Importância**: Garantir que todos os usuários tenham acesso ao sistema.
-- **Ferramentas**: axe-core, Pa11y.
-
 ### 15. Cobertura de Código 📊
 - **Ferramentas**: jest --coverage, nyc (Istanbul).
 - **Interpretação dos resultados**: A importância de uma boa cobertura de testes.
@@ -197,9 +189,7 @@ Os testes de performance têm o objetivo de garantir que o código JavaScript se
 #### Ferramentas para Testes de Performance
 
 - **Google Chrome DevTools**: Oferece uma aba de “Performance” que permite analisar o desempenho do código em tempo real, mostrando métricas como o uso da CPU, a execução de scripts e a renderização do DOM. Também fornece informações detalhadas sobre os tempos de execução de cada função.
-- **Lighthouse**: Ferramenta integrada ao Chrome DevTools que avalia a performance da página em várias métricas, como tempo de carregamento e interatividade, além de fornecer sugestões de melhorias.
-- **Node.js Profiler**: Se o código estiver sendo executado no servidor (Node.js), o `--prof` flag pode ser usado para gerar um relatório de desempenho detalhado.
-- **WebPageTest**: Um serviço que permite testar o tempo de carregamento de uma página em diferentes dispositivos e conexões, fornecendo uma análise detalhada da performance.
+- **Node.js Profiler**: Se o código estiver sendo executado no servidor (Node.js), o `--prof` flag pode ser usado para gerar um relatório de desempenho detalhado. https://betterstack.com/community/guides/scaling-nodejs/profiling-nodejs-applications/
 
 #### Bibliotecas de Teste de Performance
 
@@ -243,13 +233,6 @@ Os testes de performance têm o objetivo de garantir que o código JavaScript se
 
 - **Testar Microserviços**: Se a aplicação for composta de vários microserviços, os testes podem ser feitos dentro de um ambiente Docker, permitindo simular um ambiente de produção.
 - **Ambientes Isolados para Testes**: Utilizar Docker para criar ambientes consistentes e isolados onde os testes podem ser executados, garantindo que variações de ambiente (ex.: diferenças de configuração entre máquinas) não afetem os resultados.
-
----
-
-### Testes de Acessibilidade
-
-- Garantir que a aplicação seja acessível para todos os usuários é fundamental. Testes de acessibilidade automatizados podem identificar problemas como falta de alternativas textuais para imagens, contrastes de cores inadequados e navegação difícil para pessoas com deficiências.
-- Ferramentas como **axe-core** ou **Pa11y** podem ser usadas para integrar testes de acessibilidade automatizados nos fluxos de desenvolvimento.
 
 ---
 
