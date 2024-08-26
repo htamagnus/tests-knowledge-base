@@ -103,8 +103,6 @@ Fazer testes manualmente, ou seja, uma pessoa sentar e testar tudo passo a passo
 
     Para automatizar testes de sistemas Web em JavaScript, você pode usar ferramentas como Selenium ou alternativas modernas como Cypress ou Puppeteer. Essas ferramentas permitem que você escreva scripts de teste que interagem com o navegador, assim como um usuário real faria.
 
-### Testes End-to-End (E2E) Avançados
-
 - **Integração de Testes E2E no CI/CD**: Configurar uma pipeline de integração contínua que roda testes end-to-end automaticamente ao fazer o deploy da aplicação. Isso garante que todas as funcionalidades essenciais da aplicação sejam verificadas antes de cada lançamento.
 - **Testes de Falhas de Rede**: Simular falhas de rede e verificar como a aplicação reage quando uma API está fora do ar, ou quando há delays significativos. Ferramentas como Cypress e Puppeteer permitem simular diferentes cenários de rede.
 - **Simulação de Dispositivos e Resoluções**: Em testes de E2E de front-end, é fundamental garantir que a aplicação funcione corretamente em múltiplos dispositivos e tamanhos de tela. Ferramentas como BrowserStack e Sauce Labs permitem rodar testes em diferentes navegadores e dispositivos reais.
@@ -191,11 +189,6 @@ Os testes de performance têm o objetivo de garantir que o código JavaScript se
 - **Google Chrome DevTools**: Oferece uma aba de “Performance” que permite analisar o desempenho do código em tempo real, mostrando métricas como o uso da CPU, a execução de scripts e a renderização do DOM. Também fornece informações detalhadas sobre os tempos de execução de cada função.
 - **Node.js Profiler**: Se o código estiver sendo executado no servidor (Node.js), o `--prof` flag pode ser usado para gerar um relatório de desempenho detalhado. https://betterstack.com/community/guides/scaling-nodejs/profiling-nodejs-applications/
 
-#### Bibliotecas de Teste de Performance
-
-- **Benchmark.js**: Essa biblioteca permite realizar testes de performance comparando diferentes implementações de uma função ou trecho de código. Ela executa múltiplas iterações para fornecer resultados estatisticamente precisos.
-- **Artillery**: Focada em testes de carga, essa ferramenta permite simular o tráfego de usuários e testar como o código lida com um número crescente de solicitações simultâneas.
-
 #### Estratégias de Teste de Performance
 
 - **Testes de Latência e Tempo de Resposta**: Verificar quanto tempo uma operação leva para ser executada. Isso pode incluir medir o tempo de execução de funções, o carregamento de componentes ou até mesmo a execução de chamadas a APIs.
@@ -229,16 +222,9 @@ Os testes de performance têm o objetivo de garantir que o código JavaScript se
 
 ---
 
-### Testes com Docker e Ambientes Contêinerizados
-
-- **Testar Microserviços**: Se a aplicação for composta de vários microserviços, os testes podem ser feitos dentro de um ambiente Docker, permitindo simular um ambiente de produção.
-- **Ambientes Isolados para Testes**: Utilizar Docker para criar ambientes consistentes e isolados onde os testes podem ser executados, garantindo que variações de ambiente (ex.: diferenças de configuração entre máquinas) não afetem os resultados.
-
----
-
 ### Cobertura de Código
 
 - Introduzir ferramentas como o `jest --coverage` e o `nyc` (Istanbul) para medir a cobertura dos testes.
 - Explicar como interpretar os resultados e a relevância de uma boa cobertura de testes.
 
-
+---
